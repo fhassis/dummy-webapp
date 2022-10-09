@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "dummy-webapp-api"
+version = "0.1.0"
+description = "A dummy api to test a web application setup."
+authors = ["fhassis"]
+readme = "README.md"
+packages = [{include = "dummy_webapp_api"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+falcon = "^3.1.0"
+uvicorn = {extras = ["standard"], version = "^0.18.3"}
+orjson = "^3.8.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
